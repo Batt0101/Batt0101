@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <body style="background-color:powderblue;">
+        <h1>IT5013:  IT AND LAW (LO1) (Nz regulations) </h1>
+        <h2>As a developer are you happy with the Privacy Act200 ?</h2>
+
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+    <video id="video1" width="420">
+      <source src="mawigga.mp4" type="video/mp4">
+      <source src="mawigga.ogg" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+  </div> 
+
+  <script> 
+    var myVideo = document.getElementById("video1"); 
+    
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    } 
+    
+    function makeBig() { 
+        myVideo.width = 800; 
+    } 
+    
+    function makeSmall() { 
+        myVideo.width = 400; 
+    } 
+    
+    function makeNormal() { 
+        myVideo.width = 520; 
+    } 
+</script> 
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<h2>Please read carefully before navigating this site </h2>
+
+<p>By closing this window you are acepting our cookies policy</p>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Danger!</strong> .
+</div>Please keep this window open to decline our cookies 
+
+</body>
+</html>
+
+</html>
